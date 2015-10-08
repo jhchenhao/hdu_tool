@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="j3P-fR-nle">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="Dhd-DV-8eh">
+            <objects>
+                <navigationController id="j3P-fR-nle" customClass="BaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tf3-5Q-o9X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XmE-BD-AmE" kind="relationship" relationship="rootViewController" id="3Yj-qw-9wu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtF-MK-Z8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="366"/>
+        </scene>
+        <!--不得不上课-->
+        <scene sceneID="hLC-b3-rD4">
+            <objects>
+                <viewController id="XmE-BD-AmE" customClass="ClassScheduleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ii-Lg-hIc"/>
+                        <viewControllerLayoutGuide type="bottom" id="gzv-PO-2hV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lE4-xy-8ud">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="不得不上课" id="oLy-Bo-rmK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-Vr-fxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="366"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabBarViewController.h"
+#import "MMDrawerController.h"
+#import "LeftViewController.h"
+#import "MMExampleDrawerVisualStateManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    //构建左视图
+    MainTabBarViewController *mainTabVC = [[MainTabBarViewController alloc]init];
+    LeftViewController *leftVC = [[LeftViewController alloc]init];
+    MMDrawerController *mmDrawerVC = [[MMDrawerController alloc]initWithCenterViewController:mainTabVC leftDrawerViewController:leftVC];
+    [mmDrawerVC setMaximumLeftDrawerWidth:120];
+    //设置手势区域
+    [mmDrawerVC setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [mmDrawerVC setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    //设置动画类型
+    [[MMExampleDrawerVisualStateManager sharedManager]setLeftDrawerAnimationType:MMDrawerAnimationTypeSwingingDoor];
+    
+    [mmDrawerVC setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+        MMDrawerControllerDrawerVisualStateBlock block = [[MMExampleDrawerVisualStateManager sharedManager]drawerVisualStateBlockForDrawerSide:drawerSide];
+        if (block) {
+            block(drawerController,drawerSide,percentVisible);
+        }
+    }];
+    
+    self.window.rootViewController = mmDrawerVC;
+    
+    
     return YES;
 }
 

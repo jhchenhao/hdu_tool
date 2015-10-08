@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ERK-Lp-w8K">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="T4m-B3-gDr">
+            <objects>
+                <navigationController id="ERK-Lp-w8K" customClass="BaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y1y-E8-LNY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TE8-p8-kiC" kind="relationship" relationship="rootViewController" id="27d-Rf-uBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULT-vT-e58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.59999999999997" y="380.56"/>
+        </scene>
+        <!--乖乖呆在杭电-->
+        <scene sceneID="qWV-IB-9bJ">
+            <objects>
+                <viewController id="TE8-p8-kiC" customClass="ProMessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zMa-nO-sjW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pxd-Qe-7yZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iev-7h-Vjc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="乖乖呆在杭电" id="Vfr-6L-8O7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIL-hi-Dsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="375"/>
+        </scene>
+    </scenes>
+</document>

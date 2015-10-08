@@ -1,0 +1,61 @@
+//
+//  Common.pch
+//  杭电神器
+//
+//  Created by 吴玉铁 on 15/9/25.
+//  Copyright © 2015年 铁哥. All rights reserved.
+//
+
+#ifndef Common_pch
+#define Common_pch
+//自己看
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kVersion  [[UIDevice currentDevice].systemVersion doubleValue]
+//用户中心UserDeafult
+#define kSearchRecord @"kSearchRecord"
+#define kClassScheduleData @"kClassScheduleData"
+#define kClassScheduleTip @"kClassScheduleTip"
+#define kGardenSupport @"kGardenSupport"
+//通知
+#define kSearchTextFiledBecomeFirstResponder @"kSearchTextFiledBecomeFirstResponder"
+#define kSearchViewHidden @"kSearchViewHidden"
+#define kSearchViewAppear @"kSearchViewAppear"
+#define kLoadScheduleData @"kLoadScheduleData"
+#define kGardenLoadData   @"kGardenLoadData"
+
+//请求参数
+//有课的token：69063b87e1b2a723adb057066ca81706
+#define kAccessToken  @"82180a19c4c90e1309e96153b98b7581"
+#define kPassword  @"dTX62PfOrJOeW1WlJu37hQ=="
+
+#define BaseURL @"http://api.redhome.cc/rest/"
+#define book_rank @"?rank"
+#define book_search @"?result_search"
+#define book_info @"?info_book"
+#define class_schedule @"?schedule"
+#define info_card  @"?cas_card"
+#define class_room  @"?classroom"
+#define center_person  @"?center_person"
+#define person_grade @"?grade"
+
+//框架
+#import <UIKit/UIKit.h>
+#import "UIViewExt.h"
+
+
+//news
+
+#define edu_news_base @"http://news.hdu.edu.cn"
+#define news_plist_node @"//div[@class='page page_news']//div[@class=\'item\']"
+#define news_content_node @"//div[@class='page_show']"
+
+
+
+//note
+#define DataBaseFilePath [NSHomeDirectory() stringByAppendingFormat:@"/Documents/t_notes.rdb"] //数据库存放路径
+#define DataImageFilePath [NSHomeDirectory() stringByAppendingFormat:@"/Documents/images"]
+
+
+
+#endif /* Common_pch */

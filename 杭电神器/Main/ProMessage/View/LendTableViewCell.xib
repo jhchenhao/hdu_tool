@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lendBookCell" rowHeight="115" id="KGk-i7-Jjw" customClass="LendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好书好书好舒适好说大话法咖啡吧哭吧哭吧疯狂吧放不开" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRL-mz-0lQ">
+                        <rect key="frame" x="8" y="8" width="318" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orCoca cola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-G2-IIe">
+                        <rect key="frame" x="8" y="85" width="318" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SH3-Ks-rb8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coffee tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-rD-Rx6">
+                        <rect key="frame" x="8" y="59.5" width="318" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cwn-Uw-l9D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PTE-G2-IIe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7nW-Qz-Y8e"/>
+                    <constraint firstItem="rRL-mz-0lQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AoL-Yt-kxL"/>
+                    <constraint firstItem="rRL-mz-0lQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MSJ-as-wEy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PTE-G2-IIe" secondAttribute="bottom" id="UW3-Sl-1dO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rRL-mz-0lQ" secondAttribute="trailing" id="WN9-BW-Tgd"/>
+                    <constraint firstItem="bdZ-rD-Rx6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="c6q-hz-B4j"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PTE-G2-IIe" secondAttribute="trailing" id="dHU-FC-pug"/>
+                    <constraint firstItem="bdZ-rD-Rx6" firstAttribute="top" secondItem="rRL-mz-0lQ" secondAttribute="bottom" constant="3.5" id="iHc-Vc-8c6"/>
+                    <constraint firstItem="bdZ-rD-Rx6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qkB-jD-IZ2"/>
+                    <constraint firstItem="PTE-G2-IIe" firstAttribute="top" secondItem="bdZ-rD-Rx6" secondAttribute="bottom" constant="5" id="wZU-3q-f9E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="bdZ-rD-Rx6" id="u7D-BW-4xa"/>
+                <outlet property="bookNameLabel" destination="rRL-mz-0lQ" id="ZzQ-fV-DBg"/>
+                <outlet property="timeLabel" destination="PTE-G2-IIe" id="Mtg-9s-Jt6"/>
+            </connections>
+            <point key="canvasLocation" x="427" y="266.5"/>
+        </tableViewCell>
+    </objects>
+</document>
