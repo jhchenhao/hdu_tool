@@ -11,7 +11,7 @@
 #import "MMDrawerController.h"
 #import "LeftViewController.h"
 #import "MMExampleDrawerVisualStateManager.h"
-#import "DailySchedule.h"
+
 
 
 @interface AppDelegate ()

@@ -16,6 +16,7 @@
 
 @interface MainTabBarViewController (){
     UIImageView *_selectedImageView;
+    
 }
 
 @end
